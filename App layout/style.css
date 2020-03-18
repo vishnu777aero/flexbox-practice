@@ -74,6 +74,7 @@ html {
   
   .icon-bar {
     border-top:1px solid #E6E6E6;
+    display: flex;
   }
   
   .icon-bar i {
@@ -88,15 +89,20 @@ html {
     background:#F0CB45;
     color:rgba(0,0,0,0.5);
     padding:1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .app-header > h1 {
+      flex: 1 1 auto;
   }
   
-  
-  /*
-    Everything So far is Cosmetic styling 
-    Flexbox + Important CSS Starts Here
-  */
-  
-  
-  /*
-    Overall Layout
-  */
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    overflow-y: scroll;
+}
